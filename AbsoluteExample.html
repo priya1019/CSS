@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            section{
+                height: 500px;
+                width: 600px;
+                border: 2px solid pink;
+                position: relative;
+                top: 100px;
+                left: 100px;
+            }
+            span{
+                border: 2px solid blue;
+                position: relative;
+                left: 10px;;
+            }
+            b{
+                border: 2px solid blue;
+                position: relative/*inline element relative position always works with previous inline sibling*/;
+                left: 30px;
+                top: 30px;
+            }
+
+            i{
+                border: 2px solid blue;
+                position: absolute;/*elements absolute position always works with parent*/
+                left: 100px;
+                top: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <span>India is my Country</span>
+            <b>All Indians are my brothers and sisters</b>
+            <i>I love my Country</i>
+        </section>
+    </body>
+</html>

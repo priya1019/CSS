@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <style>
+            /*block: always take parent full width, always at new line
+            height width gets applied*/
+            /*inline: always takes content width, always in one line, 
+            height and width does not get applied*/
+            /*inline-block:always in one line, height width gets applied*/
+            li{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                display:inline-block;
+            }
+            #d1{
+                background-color: aqua;
+                height: 300px;
+                width: 200px;
+                padding: 20px;
+            }
+            #d2{
+                background-color: red;;
+                height: 400px;
+                width: 300px;
+                display: inline;
+            }
+            #d3{
+                background-color: grey;
+                height: 100px;
+                width: 300px;
+                display: inline-block;
+            }
+            #inline1{
+                background-color: blue;
+                /*inline element has their inbuilt height and width it cannot be modified*/
+                height: 300px;
+                width: 200px;
+                padding: 20px;
+            }
+            #inline2{
+                background-color: pink;
+                /*inline element has their inbuilt height and width it cannot be modified*/
+                height: 100px;
+                width: 200px;
+                display: block;
+            }
+            #inline3{
+                background-color: hotpink;
+                height: 300px;
+                width: 200px;
+                padding:20px ;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </nav>
+        <div id="d1">
+            Hello i am div tag
+        </div>
+        <div id="d2">
+            Hello i am div tag
+        </div>
+        <div id="d3">
+            Hello i am div tag
+        </div>
+        <b id="inline1">hey..i am bold tag kusgiauyiudi</b>
+        <b id="inline2">kusgiauyiudi</b>
+        <b id="inline3">hey..i am bold tag kusgiauyiudi</b>        
+    </body>
+</html>

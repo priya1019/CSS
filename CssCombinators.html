@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <style>
+            p{
+                background-color: aqua;
+            }
+            /* p which are descendants(direct/indirect childs) of article*/
+            article p{
+                color: blue;
+            }
+            /* p which are direct childs of article*/
+            article>p{
+                color: red;
+            }
+            /*selecting paragraphs next to section within same parent
+            general sibling selector*/
+            section~p{
+                border: 5px solid blue;
+            }
+            /*selecting p tag immediately next to section within same parent
+            adjacent sibling selector*/
+            section+p{
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <p>Paragraph 1</p>
+            <span> Span 1</span>
+            <p>Paragraph 2</p>
+            <span>Span 2</span>
+            <p>Paragraph 3</p>
+            <section>
+                <p>Paragraph 4</p>
+            </section>
+            <span>asgaidh</span>
+            <p>Paragraph 5</p>
+            <b>Bold element</b>
+            <p>Paragraph 6</p>
+        </article>
+        <div>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+            <p>Paragraph 9</p>
+            <section>
+                <p>Paragraph 10</p>
+            </section>
+            <p>Paragraph 11</p>
+            <p>Paragraph 12</p>
+        </div>
+    </body>

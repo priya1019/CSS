@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <script>
+            function myfun(){
+                let block=document.getElementById("blk1");
+                block.style.transform="translate(200px)";
+            }
+        </script>
+        <style>
+            .block{
+                height: 100px;
+                width: 100px;
+                background-color: aqua;
+                border: 2px solid red;
+                transition-duration: 5s;
+            }
+            .block1{
+                margin-left: 400px;    
+            }
+            #blk1:hover{
+                transform: translateX(200px);
+
+            }
+            #blk2:hover{
+                transform: translateY(100px);
+
+            }
+            #blk3:hover{
+                transform: translate(300px, 200px);
+            }
+            #image:hover{
+                transform: translate(300px, 200px);
+            }
+            #blk4:hover{
+                transform: scaleX(-2);
+                border-width: 10px;
+                border-left-color: blue;
+                border-right-color:greenyellow;
+            }
+            #blk5:hover{
+                transform: scaleY(2);
+            }
+            #blk6:hover{
+                transform: scale(2,3);
+            }
+            #blk7:hover{
+                transform: rotate(90deg);
+            }
+            #blk8:hover{
+                transform: rotateX(85deg);
+            }
+            #blk9:hover{
+                transform: rotateY(85deg);
+            }
+            #blk10:hover{
+                transform: skew(45deg);
+            }
+            #blk11:hover{
+                transform: skewX(45deg);
+            }
+            #blk12:hover{
+                transform: skewY(45deg);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <button onclick="myfun()">Translate</button>
+        <div class="block" id="blk1">
+        </div>
+        <div class="block" id="blk2">
+        </div>        
+        <div class="block" id="blk3">
+        </div>
+        <img src="MyImages/nature.jpg" class="block" id="image">
+        <section>
+        <div class="block block1" id="blk4">
+        </div>
+        <div class="block block1" id="blk5">
+
+        </div>
+        <div class="block block1" id="blk6">
+
+        </div>
+        <hr>
+    </section>
+    <section class="block1">
+        <div class="block block1" id="blk7">
+        NeoSOFT technologies
+        </div>
+        <div class="block block1" id="blk8">
+            NeoSOFT technologies
+        </div>
+        <div class="block block1" id="blk9">
+            NeoSOFT technologies
+        </div>
+    </section>
+    <hr>
+    <section class="block1">
+        <div class="block block1" id="blk10">
+        NeoSOFT technologies
+        </div>
+        <div class="block block1" id="blk11">
+            NeoSOFT technologies
+        </div>
+        <div class="block block1" id="blk12">
+            NeoSOFT technologies
+        </div>
+    </section>
+    </body>
+</html> 

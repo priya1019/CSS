@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <style>
+            .block{
+                height: 200px;
+                width: 300px;
+                background-color: lightpink;
+            }
+            #block1{
+                border-width: 5px;
+                border-color: blueviolet;
+                border-style: solid;
+            }
+            #block2{
+                border: 4px yellow dashed;/*any sequence*/
+                box-shadow: 10px 10px ;
+            }
+            #block3{
+                border: 4px yellow solid;
+                border-bottom-left-radius: 10px;/*any sequence*/
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 40px;
+
+                padding-top: 20px;
+                padding-left:20px ;
+                padding-right: 10px;
+                padding-bottom: 30px;
+                padding: 20px 40px 10px;
+            }
+            #block4{
+                border: 4px yellow solid;
+                border-radius: 30px;/*all corners same border*/
+             /*top, right opposite corner same padding*/
+            }
+            #block5{
+                border: 4px yellow solid;
+                border-radius: 20px, 50px;/*topleft,topright opposite corners same border*/
+            }
+            #block6{
+                border: 4px yellow solid;
+                border-radius: 20px, 50px,10px;/*topleft,topright opposite corners same border*/
+            }
+            #block7{
+                border: 4px yellow solid;
+                border-radius: 20px, 50px,10px,30px;/*topleft,topright opposite corners same border*/
+            }
+            #natureimg{
+                border-radius: 20px;
+                background: url("nature.jpg") repeat-y;
+                background: border-box red;
+            }
+            /*padding is a spacing inside an element around its child element*/
+            #natureimg1{
+                border: 2px solid blue;
+                margin-top:20px;
+                margin-left: 40px;
+                margin-bottom: 30px;
+                padding: 20px;
+
+            }
+            #block9{
+                box-shadow: 10px 10px 10px hotpink;/*right bottom*/
+            }
+            #block10{
+                box-shadow: -10px -10px 20px hotpink;/*right bottom*/
+            }
+            #block11{
+                box-shadow: -10px 10px 30px hotpink;/*right bottom*/
+            }
+            h1{
+                font-style: italic;
+                color: aquamarine;
+                text-shadow: 20px 20px 4px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sachin Tendulkar</h1>
+        <div class="block" id="block1">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        
+        <div class="block" id="block2">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        <div class="block" id="block3">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        <div class="block" id="block4">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        <div class="block" id="block5">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        
+        <div class="block" id="block6">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        <div class="block" id="block7">
+            Welcome to neoSOFT technology, you are learing front end development technologies.
+        </div>
+        <img src="MyImages/nature.jpg" id="natureimg1"><br>
+            <img src="MyImages/nature.jpg" id="natureimg">
+        
+        <div class="block" id="block9">
+
+        </div>
+        <hr>
+        <div class="block" id="block10">
+
+        </div>
+        <hr>
+        <div class="block" id="block11">
+
+        </div>
+    </body>
+</html>

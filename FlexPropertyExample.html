@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <style>
+            /*if container contains multiple lines of items then use align-content 
+            property it wont work with nowrap and works with wrap and wrap-reverse*/
+            .container{
+                background-color: lightcyan;
+                border:4px solid pink;
+                display: flex;
+                flex-direction: row; /* bydefault flex direction : row*/
+            }
+            .item{
+                background-color: bisque;
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid blue;
+            }/*order:0*/
+            #i2{
+                order: 3;
+            }
+            #i1{
+                order: 2;
+            }
+            #i3{
+                order: 5;
+            }
+            #i4{
+                order: 1;
+            }
+            #i5{
+                order: 4;
+            }
+            #count3{
+                flex-wrap: wrap;
+            }
+            #count4{
+                height: 700px;
+                flex-flow: row-reverse wrap;/*short hand property*/
+                align-content: space-between;/*observes by applied align-items*/
+            }
+            #count5{
+                justify-content: space-between;
+            }
+            #count6{
+                height: 600px;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="count1">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <div class="item">item4</div>
+            <div class="item">item5</div>
+
+        </div>
+        <div class="container" id="count2">
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+
+        </div>
+        <div class="container" id="count3">
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+
+        </div>
+        <div class="container" id="count4">
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+
+            <div class="item" id="i1">item1</div>
+            <div class="item" id="i2">item2</div>
+            <div class="item" id="i3">item3</div>
+            <div class="item" id="i4">item4</div>
+            <div class="item" id="i5">item5</div>
+            
+    </div> 
+    <div class="container" id="count5">
+        <div class="container" id="count4"></div>
+        <div class="item" id="i1">item1</div>
+        <div class="item" id="i2">item2</div>
+        <div class="item" id="i3">item3</div>
+        <div class="item" id="i4">item4</div>
+        <div class="item" id="i5">item5</div>
+    </div>
+    <div class="container" id="count6">
+        <div class="container" id="count4"></div>
+        <div class="item" id="i1">item1</div>
+        <div class="item" id="i2">item2</div>
+        <div class="item" id="i3">item3</div>
+        <div class="item" id="i4">item4</div>
+        <div class="item" id="i5">item5</div>
+    </div>
+    </body>
+</html>

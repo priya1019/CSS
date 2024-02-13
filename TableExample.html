@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!-- -->
+        <style>
+            table{
+                background-color: pink;
+            }
+            tr{
+                border-collapse: collapse;
+            }
+            .capstyle{
+                color: purple;
+            }
+            .h2{
+                color: crimson;
+
+            }
+            #theadblock{
+                background-color: coral;
+                font-size: 25px;
+                font-weight: bolder;
+                padding: 5px;
+            }
+            [border]{
+                text-transform: uppercase;
+            }
+            [type="A"]{
+                background-color: cyan;
+            }
+            /*apply same style to ol as well as ul*/
+            ol,ul{
+                text-transform: uppercase;
+            }
+            /*.theading applied to h2 as well as caption but we want to apply style of h2 having class .theading then?. */
+            h2.theading{
+                border: 4px dotted hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <!--table-> caption,
+            thead, tbody
+            thead-> tr->th
+            tbody->tr->td 
+        -->
+        <div style="background-color: pink; width: 500px; border: 5px solid blue;">
+            <h3 style="background-color: red;">Front End Technologies</h3>
+            <h4>Ordered List</h4>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>BOOTSTRAP</li>
+            </ol>
+            <ol type="A" start="5">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>BOOTSTRAP</li>
+            </ol>
+            <ol type="I" start="2" reversed>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>BOOTSTRAP</li>
+            </ol>
+        </div>
+        <div>
+            <hr>
+            <div>
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>BOOTSTRAP</li>
+                </ul>
+                <ul type="square">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>BOOTSTRAP</li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <h3>Description List</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HTML is Hypertext Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>CSS is Cascading Stylr Sheet</dd>
+                </dl>
+            </div>
+        
+            <hr>
+            <div>
+                <h3>Nested List</h3>
+                <ul>
+                    <li>HTMl</li>
+                    <li>CSS</li>
+                    <li>JavaScript<ol>
+                        <li>Basic</li>
+                        <li>Advanced</li> 
+                    </ol></li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="h2">Basic table</h2>
+        <table border="2">
+            <caption class="theading">Salary Info</caption>
+            <thead id="theadblock">
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Salary</th>
+                    <th>Salary</th>
+                    <th>Bonus%</th>
+                    <th>Incentive</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1101</td>
+                    <td>20000</td>
+                    <td>40000</td>
+                    <td>10</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>1102</td>
+                    <td>40000</td>
+                    <td>50000</td>
+                    <td>20</td>
+                    <td rowspan="2">0</td>
+                </tr>
+                <tr>
+                    <td>1101</td>
+                    <td>20000</td>
+                    <td>30000</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+        <ol type="A" start="5">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>BOOTSTRAP</li>
+        </ol>
+        <ol type="I" start="2" reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>BOOTSTRAP</li>
+        </ol>
+    </div>
+    </body>
+    </html>

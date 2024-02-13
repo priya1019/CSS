@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <style>
+            figure img{
+                height: 100px;
+                width: 100px;
+            }
+            section{
+                border: 2px solid blue;
+                
+            }
+            figure{
+                border: 3px solid red;
+                background-color: aqua;
+                float: left;
+            }
+            #p1{
+                clear: both;
+            }
+            #img1,#block{
+                height: 300px;
+                width: 200px;
+            }
+            #img1.hover{
+                height:600px ;
+                width: 700px;
+                transition-property: width;
+                transition-duration: 10s;
+            }
+            #block,#block1{
+                background-color: aqua;
+                border-style: solid;
+                background-image: linear-gradient(red,yellow,pink);
+            }
+            #block:hover{
+                background-color:blue;
+                width: 500px;
+                border-width: 10px;
+                border-style: dashed;
+                background-image: linear-gradient(to right,blue,orange,pink);
+                transition-property: width,backgorund-color, background-image,border-width,border-style;
+                transition-duration: 5s;
+               /* transition-delay: 5s;*/
+                transition-timing-function: ease;
+            }
+            #block1:hover{
+                background-color:blue;
+                width: 500px;
+                border-width: 10px;
+                border-style: dashed;
+                background-image: linear-gradient(to right,blue,orange,pink);
+                transition:width 12s,border-width 12s, ease-in 5s;    
+            /*single property duration function delay*/
+            /*multiple property duration,pr dur*/
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <figure>
+                <img src="MyImages/nature.jpg" alt="no image">
+                <img src="MyImages/nature.jpg" alt="no image">
+                <img src="MyImages/nature.jpg" alt="no image">
+                <img src="MyImages/nature.jpg" alt="no image">
+            </figure>
+            <p  id="p1">Welcome to newsoft technologies</p>
+            <p>We are learning CSS Welcome to newsoft technologies Welcome to newsoft technologies Welcome to newsoft technologies</p>
+        </section>
+        <img src="MyImages/nature.jpg" id = "img1">
+        <div id="block">
+
+        </div>
+        <hr>
+        <div id="block1">
+            hello
+        </div>
+   
+    </body>
+</html>
